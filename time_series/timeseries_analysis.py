@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Railway Alarm Prediction System
+Alarm Prediction System
 Automated script for predicting Criticality_1 alarms on railway vehicles
 
 """

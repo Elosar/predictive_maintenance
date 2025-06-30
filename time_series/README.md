@@ -1,4 +1,4 @@
-# Time Series Forecasting of Critical Railway Alarms
+# Time Series Forecasting of Critical Alarms
 
 This script automates the process of forecasting critical railway alarms (`Criticality_1`) for individual train cars using time-series analysis with the **Prophet** library.
 
