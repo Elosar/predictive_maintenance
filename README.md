@@ -1,4 +1,3 @@
-# predictive_maintenance
 # 🚆 Predictive Maintenance & Alarm Intelligence for Railway Transport
 
 This project builds a data-driven system for **predictive maintenance** and **anomaly detection** in railway transport, focusing on the **train’s traction system**. It enables:
@@ -46,7 +45,7 @@ Includes class rebalancing (SMOTETomek), categorical encoding, threshold analysi
 Forecast the **number of daily critical alarms** per train car using Prophet.  
 Generates individual forecasts, heatmaps, and performance comparisons.
 
-📘 Detailed instructions: [timeseries_forecasting/README.md](timeseries_forecasting/README.md)
+📘 Detailed instructions: [timeseries/README.md](timeseries_forecasting/README.md)
 
 ## ▶️ Run the Project
 
@@ -62,7 +61,7 @@ python shap_explanations.py              # Optional: generates SHAP plots
 
 To run Time Series Pipeline
 
-cd timeseries_forecasting
+cd timeseries
 python timeseries_analysis.py
 
 ## 📁 Outputs Summary
