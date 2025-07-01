@@ -1,0 +1,8 @@
+# Ignore classification outputs
+classification/model_output/
+
+# Ignore forecasting outputs
+timeseries_forecasting/output/
+
+# Ignore logs or other temp files
+*.log
