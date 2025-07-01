@@ -45,7 +45,7 @@ Includes class rebalancing (SMOTETomek), categorical encoding, threshold analysi
 Forecast the **number of daily critical alarms** per train car using Prophet.  
 Generates individual forecasts, heatmaps, and performance comparisons.
 
-📘 Detailed instructions: [timeseries/README.md](timeseries_forecasting/README.md)
+📘 Detailed instructions: [time_series/README.md](timeseries_forecasting/README.md)
 
 ## ▶️ Run the Project
 
