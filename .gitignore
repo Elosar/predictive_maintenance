@@ -1,8 +1,8 @@
 # Ignore all output and data files
 classification/model_output/
 classification/data/
-time_series_forecasting/output/
-time_series_forecasting/data/
+time_series/output/
+time_series/data/
 *.joblib
 *.json
 *.log

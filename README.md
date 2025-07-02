@@ -1,4 +1,4 @@
-# 🚆 Predictive Maintenance & Alarm Intelligence for Railway Transport
+# Predictive Maintenance & Alarm Intelligence for Railway Transport
 
 This project builds a data-driven system for **predictive maintenance** and **anomaly detection** in railway transport, focusing on the **train’s traction system**. It enables:
 
@@ -10,15 +10,16 @@ It combines **machine learning**, **time series modeling**, and **explainable AI
 
 ---
 
-## 📌 About the Project
+## About the Project
 
 The project explores the feasibility of applying a **data-driven strategy** within the decision-making process of **Trenord**, a regional railway operator in Northern Italy. It leverages historical alarm data, maintenance logs, and service information to build machine learning and time series models for early warning and classification systems.
 
 ---
 
-## 📊 Dataset
+## Dataset
 
-The dataset was collected and pre-processed as part of a predictive maintenance initiative at the **University of Bologna** in collaboration with **Trenord** (Giulia Millitarì, 2023/2024). This project extends and adapts that work to build new tools.
+The dataset was collected and pre-processed as part of a predictive maintenance initiative at the **University of Bologna** in collaboration with **Trenord** (Giulia Millitarì, 2023/2024). This project extends and adapts that work to build new tools. [Direct link to the mentioned work](https://iris.cnr.it/handle/20.500.14243/514952)
+
 
 ### 🔹 Dataset Files
 
@@ -27,7 +28,7 @@ The dataset was collected and pre-processed as part of a predictive maintenance 
 | `TSR_040_DEF.csv` | Event-level alarm dataset with 101,708 rows × 19 columns. Contains timestamps, sources, alarm codes, GPS, wagon IDs, and labels like `Criticality`. |
 | `TSR_040_daily.csv` | Daily aggregated dataset with 767 rows × 259 columns. Includes alert counts, maintenance/service data, and total km traveled. |
 
-## 🧠 Modules Overview
+## Modules Overview
 
 This project contains two main components:
 
