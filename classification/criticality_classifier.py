@@ -168,6 +168,21 @@ plt.savefig(THRESHOLD_PLOT_FILE)
 plt.close()
 print(f"Threshold analysis plot saved to {THRESHOLD_PLOT_FILE}")
 
+# --- Save Predictions ---
+predictions = test_df[['Time', 'Source', 'Name', 'Criticality']].copy()
+predictions['Predicted_Probability'] = y_prob
+predictions['Predicted_Label'] = y_pred_custom
+
+# Convert datetime for JSON compatibility
+predictions['Time'] = predictions['Time'].astype(str)
+
+# Convert to list of dictionaries and save
+predictions_json = predictions.to_dict(orient='records')
+with open(os.path.join(OUTPUT_DIR, 'predictions.json'), 'w') as f:
+    json.dump(predictions_json, f, indent=4)
+
+print("Predictions saved to model_output/predictions.json")
+
 # --- Save Model ---
 joblib.dump(model, MODEL_FILE)
 print(f"Trained model saved to {MODEL_FILE}")
