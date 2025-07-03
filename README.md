@@ -2,8 +2,7 @@
 
 This project builds a data-driven system for **predictive maintenance** and **anomaly detection** in railway transport, focusing on the **train’s traction system**. It enables:
 
-- Early detection of abnormal alarm behavior
-- Classification of **critical alarms**
+- Classification of critical alarms
 - Forecasting of alarm volumes using time series analysis
 
 It combines **machine learning**, **time series modeling**, and **explainable AI (XAI)** techniques, applied to Trenord telemetry and maintenance data.
@@ -48,22 +47,36 @@ Generates individual forecasts, heatmaps, and performance comparisons.
 
 📘 Detailed instructions: [time_series/README.md](time_series/README.md)
 
-## ▶️ Run the Project
+## Run the Project
 
 ### Install required dependencies:
-
+Run following command in each module:
+```bash
 pip install -r requirements.txt
+```
+### Prepare data directory
+Each module expects a `data/` directory containing the required CSV files. Create the folders and place your data inside:
+```bash
+mkdir classification/data
+mkdir time_series/data
+```
+Then, upload your data files (e.g., `TSR_040_DEF.csv`, `TSR_040_daily.csv`, etc.) into the appropriate folder.
 
-To run classificatio pipeline
+### Navigate to modules
 
+Navigate to the classification directory and run:
+
+```bash
 cd classification
-python criticality_classifier.py         # Trains and saves model, metrics, plots
-python shap_explanations.py              # Optional: generates SHAP plots
+python criticality_classifier.py     # Trains the model, saves metrics, plots, predictions
+python shap_explanations.py         # Optional: generates SHAP explanations
+```
+Navigate to the time series directory and execute the analysis:
 
-To run Time Series Pipeline
-
-cd timeseries
+```bash
+cd time_series
 python timeseries_analysis.py
+```
 
 ## 📁 Outputs Summary
 
