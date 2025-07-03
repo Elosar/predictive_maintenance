@@ -1,8 +1,10 @@
-# Ignore all output and data files
+# Ignore specific output and data folders
 classification/model_output/
-classification/data/
+classification/data/*.csv
 time_series/output/
-time_series/data/
+time_series/data/*.csv
+
+# Ignore general output types
 *.joblib
 *.json
 *.log

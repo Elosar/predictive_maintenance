@@ -55,12 +55,8 @@ Run following command in each module:
 pip install -r requirements.txt
 ```
 ### Prepare data directory
-Each module expects a `data/` directory containing the required CSV files. Create the folders and place your data inside:
-```bash
-mkdir classification/data
-mkdir time_series/data
-```
-Then, upload your data files (e.g., `TSR_040_DEF.csv`, `TSR_040_daily.csv`, etc.) into the appropriate folder.
+Each module has a `data/` directory requires to contain CSV files.
+Upload your data files inside the directory (e.g., `TSR_040_DEF.csv`, `TSR_040_daily.csv`, etc.).
 
 ### Navigate to modules
 
@@ -69,7 +65,7 @@ Navigate to the classification directory and run:
 ```bash
 cd classification
 python criticality_classifier.py     # Trains the model, saves metrics, plots, predictions
-python shap_explanations.py         # Optional: generates SHAP explanations
+python shap_explainability.py         # Optional: generates SHAP explanations
 ```
 Navigate to the time series directory and execute the analysis:
 
